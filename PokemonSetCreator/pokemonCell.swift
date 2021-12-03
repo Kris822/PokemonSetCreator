@@ -1,5 +1,5 @@
 //
-//  pokemon.swift
+//  pokemonCell.swift
 //  PokemonSetCreator
 //
 //  Created by Lee, Christopher on 12/3/21.
@@ -7,14 +7,17 @@
 
 import UIKit
 
-class pokemon: UITableViewCell {
+class pokemonCell: UITableViewCell {
 
     @IBOutlet weak var pokemonImage: UIImageView!
-    
     @IBOutlet weak var typeLabel: UILabel!
+    
     @IBOutlet weak var levelLabel: UILabel!
+    
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var abilityLabel: UILabel!
+    
+    let magmaColor = UIColor(red: 255/255, green: 153/255, blue: 153/255, alpha: 1)
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +36,9 @@ class pokemon: UITableViewCell {
            let item = pokedex.value(forKey: "item") as? String,
            let ability = pokedex.value(forKey: "ability") as? String {
             
+            backgroundColor = magmaColor
+            
+            
             typeLabel?.text = type
             levelLabel?.text = level
             itemLabel?.text = item
@@ -41,3 +47,4 @@ class pokemon: UITableViewCell {
     }
     
 }
+
