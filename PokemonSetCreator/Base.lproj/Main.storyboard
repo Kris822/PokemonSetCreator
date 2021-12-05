@@ -216,8 +216,52 @@
                                 <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="Ah5-TA-oHt">
+                                <rect key="frame" x="125" y="704" width="164" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dq-i8-Fcx">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSave:" destination="fAB-eC-kMn" eventType="touchUpInside" id="rTi-Yx-jgk"/>
+                                            <segue destination="SOo-e8-Do9" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="VDk-Bl-yDc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvh-cN-pVf">
+                                        <rect key="frame" x="116" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCancel:" destination="fAB-eC-kMn" eventType="touchUpInside" id="M7p-yM-kkq"/>
+                                            <segue destination="SOo-e8-Do9" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="xiA-mB-kl6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ReN-He-s30">
+                                <rect key="frame" x="92.5" y="79" width="229" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEa-53-nF3">
+                                        <rect key="frame" x="0.0" y="40" width="71" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Gm-XZ-qn6">
+                                        <rect key="frame" x="79" y="0.0" width="150" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="G4x-M9-Arp"/>
+                                            <constraint firstAttribute="height" constant="100" id="HRb-lr-XwJ"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="WRi-F7-gQ0">
-                                <rect key="frame" x="104.5" y="79" width="205.5" height="235"/>
+                                <rect key="frame" x="104.5" y="209" width="205.5" height="235"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-On-J6Y">
                                         <rect key="frame" x="0.0" y="0.0" width="205.5" height="34"/>
@@ -297,41 +341,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="Ah5-TA-oHt">
-                                <rect key="frame" x="125" y="704" width="164" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dq-i8-Fcx">
-                                        <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
-                                        <state key="normal" title="Save">
-                                            <color key="titleColor" systemColor="systemRedColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onSave:" destination="fAB-eC-kMn" eventType="touchUpInside" id="rTi-Yx-jgk"/>
-                                            <segue destination="SOo-e8-Do9" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="VDk-Bl-yDc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvh-cN-pVf">
-                                        <rect key="frame" x="116" y="0.0" width="48" height="30"/>
-                                        <state key="normal" title="Cancel">
-                                            <color key="titleColor" systemColor="systemRedColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onCancel:" destination="fAB-eC-kMn" eventType="touchUpInside" id="M7p-yM-kkq"/>
-                                            <segue destination="SOo-e8-Do9" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="xiA-mB-kl6"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eEE-GY-6U2"/>
                         <color key="backgroundColor" red="0.92133218049999999" green="0.001363926996" blue="0.24120342959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="JsE-im-dhL" firstAttribute="top" secondItem="eEE-GY-6U2" secondAttribute="top" constant="25" id="4aQ-7i-OKX"/>
-                            <constraint firstItem="WRi-F7-gQ0" firstAttribute="top" secondItem="JsE-im-dhL" secondAttribute="bottom" constant="30" id="8Bp-be-V2T"/>
+                            <constraint firstItem="WRi-F7-gQ0" firstAttribute="top" secondItem="ReN-He-s30" secondAttribute="bottom" constant="30" id="Asx-qJ-Y00"/>
                             <constraint firstItem="JsE-im-dhL" firstAttribute="centerX" secondItem="eEE-GY-6U2" secondAttribute="centerX" id="Ilm-yH-hBZ"/>
                             <constraint firstItem="WRi-F7-gQ0" firstAttribute="centerX" secondItem="eEE-GY-6U2" secondAttribute="centerX" id="VrD-bx-nk6"/>
                             <constraint firstItem="Ah5-TA-oHt" firstAttribute="centerX" secondItem="eEE-GY-6U2" secondAttribute="centerX" id="ZTq-ny-WAQ"/>
                             <constraint firstItem="eEE-GY-6U2" firstAttribute="bottom" secondItem="Ah5-TA-oHt" secondAttribute="bottom" constant="25" id="aS5-po-CzD"/>
+                            <constraint firstItem="ReN-He-s30" firstAttribute="centerX" secondItem="eEE-GY-6U2" secondAttribute="centerX" id="hpM-Kt-MMS"/>
+                            <constraint firstItem="ReN-He-s30" firstAttribute="top" secondItem="JsE-im-dhL" secondAttribute="bottom" constant="30" id="xR9-qE-idD"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -343,6 +364,8 @@
                         <outlet property="itemLabel" destination="vrX-Bv-uBA" id="Anh-Vn-TDp"/>
                         <outlet property="levelField" destination="mVH-ds-lc1" id="2gL-bl-9UJ"/>
                         <outlet property="levelLabel" destination="8Ii-sb-5tr" id="UBD-F8-iZD"/>
+                        <outlet property="pokemonLabel" destination="zEa-53-nF3" id="Wkp-9i-uKF"/>
+                        <outlet property="pokemonPicker" destination="9Gm-XZ-qn6" id="IjU-Xh-mAu"/>
                         <outlet property="titleLabel" destination="JsE-im-dhL" id="h6Y-Ou-3vT"/>
                         <outlet property="typeField" destination="oRq-RP-dlX" id="3q4-CP-Vzc"/>
                         <outlet property="typeLabel" destination="J1q-nL-XOj" id="JVZ-bT-0md"/>
@@ -384,6 +407,9 @@
         <image name="QuestionMark" width="880" height="880"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
