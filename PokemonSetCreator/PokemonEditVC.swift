@@ -43,6 +43,10 @@ class PokemonEditVC: UIViewController{
         self.view.backgroundColor = magmaColor
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     func saveItem(type: String, level: String, ability: String, item: String) {
         let context = AppDelegate.cdContext
         if let entity = NSEntityDescription.entity(forEntityName: "Pokedex", in: context) {
@@ -51,6 +55,8 @@ class PokemonEditVC: UIViewController{
             pokedex.setValue(level, forKeyPath: "level")
             pokedex.setValue(item, forKeyPath: "item")
             pokedex.setValue(ability, forKeyPath: "ability")
+            
+            pokedex.setValue(pokemonPicker.selectedRow(inComponent: 0), forKey: "sprite")
         
             do {
                 try context.save()

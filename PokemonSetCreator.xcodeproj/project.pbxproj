@@ -11,6 +11,7 @@
 		A403659F275ACC140007303A /* PokemonEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403659E275ACC140007303A /* PokemonEditVC.swift */; };
 		A40365A2275AD82A0007303A /* pokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40365A0275AD82A0007303A /* pokemonCell.swift */; };
 		A40365A3275AD82A0007303A /* pokemonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40365A1275AD82A0007303A /* pokemonCell.xib */; };
+		A45C7F0B275D7923006406DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A45C7F0D275D7923006406DD /* Localizable.strings */; };
 		A4C35A072759722E0055B052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C35A062759722E0055B052 /* AppDelegate.swift */; };
 		A4C35A092759722E0055B052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C35A082759722E0055B052 /* SceneDelegate.swift */; };
 		A4C35A0B2759722E0055B052 /* TeamTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C35A0A2759722E0055B052 /* TeamTableView.swift */; };
@@ -26,6 +27,8 @@
 		A403659E275ACC140007303A /* PokemonEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonEditVC.swift; sourceTree = "<group>"; };
 		A40365A0275AD82A0007303A /* pokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonCell.swift; sourceTree = "<group>"; };
 		A40365A1275AD82A0007303A /* pokemonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pokemonCell.xib; sourceTree = "<group>"; };
+		A45C7F0C275D7923006406DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A45C7F0E275D792E006406DD /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A4C35A032759722E0055B052 /* PokemonSetCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonSetCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C35A062759722E0055B052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C35A082759722E0055B052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 				A4C35A0F2759722E0055B052 /* PokemonSetCreator.xcdatamodeld */,
 				A40365A0275AD82A0007303A /* pokemonCell.swift */,
 				A40365A1275AD82A0007303A /* pokemonCell.xib */,
+				A45C7F0D275D7923006406DD /* Localizable.strings */,
 			);
 			path = PokemonSetCreator;
 			sourceTree = "<group>";
@@ -126,6 +130,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = A4C359FA2759722E0055B052;
 			productRefGroup = A4C35A042759722E0055B052 /* Products */;
@@ -142,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45C7F0B275D7923006406DD /* Localizable.strings in Resources */,
 				A40365A3275AD82A0007303A /* pokemonCell.xib in Resources */,
 				A4C35A162759722F0055B052 /* LaunchScreen.storyboard in Resources */,
 				A4C35A132759722F0055B052 /* Assets.xcassets in Resources */,
@@ -170,6 +176,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A45C7F0D275D7923006406DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A45C7F0C275D7923006406DD /* en */,
+				A45C7F0E275D792E006406DD /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A4C35A0C2759722E0055B052 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -193,6 +208,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -254,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

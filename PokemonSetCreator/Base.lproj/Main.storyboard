@@ -32,6 +32,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="lNs-KC-XXJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="hMs-N9-SJe">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <segue destination="fvf-jT-5ef" kind="presentation" id="2oU-KP-XJ3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Aw-T8-wL5">
                             <color key="tintColor" systemColor="systemBackgroundColor"/>
                             <connections>
@@ -375,6 +381,95 @@
                 <exit id="SOo-e8-Do9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1717" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fb1-YE-Qgx">
+            <objects>
+                <viewController id="fvf-jT-5ef" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxm-Q5-0Or">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hV-xH-Ibk">
+                                <rect key="frame" x="178" y="748" width="58" height="30"/>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <segue destination="ad8-Gy-pKd" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="Fh5-VI-vDD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cool Extra Features!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg6-Td-KyJ">
+                                <rect key="frame" x="119" y="30" width="176.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="123" translatesAutoresizingMaskIntoConstraints="NO" id="ToS-d5-cR8">
+                                <rect key="frame" x="87.5" y="94" width="239" height="183"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1W-OP-lIj">
+                                        <rect key="frame" x="0.0" y="0.0" width="239" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Special Video for all Pokemon Fans"/>
+                                        <connections>
+                                            <segue destination="bfB-HT-78v" kind="presentation" id="XMv-xr-zAL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAJ-iM-p0a">
+                                        <rect key="frame" x="36.5" y="153" width="166" height="30"/>
+                                        <state key="normal" title="Check out an animation!"/>
+                                        <connections>
+                                            <segue destination="JL2-ge-MTJ" kind="presentation" id="ew8-wu-WuH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAt-Sl-8vz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wg6-Td-KyJ" firstAttribute="centerX" secondItem="bAt-Sl-8vz" secondAttribute="centerX" id="90B-Dl-hyA"/>
+                            <constraint firstItem="ToS-d5-cR8" firstAttribute="top" secondItem="wg6-Td-KyJ" secondAttribute="bottom" constant="40" id="Dpl-CV-y9g"/>
+                            <constraint firstItem="wg6-Td-KyJ" firstAttribute="top" secondItem="bAt-Sl-8vz" secondAttribute="top" constant="30" id="JLC-cA-mdx"/>
+                            <constraint firstItem="ToS-d5-cR8" firstAttribute="centerX" secondItem="bAt-Sl-8vz" secondAttribute="centerX" id="U4A-HG-Y54"/>
+                            <constraint firstItem="0hV-xH-Ibk" firstAttribute="centerX" secondItem="bAt-Sl-8vz" secondAttribute="centerX" id="jyP-GO-BBq"/>
+                            <constraint firstItem="bAt-Sl-8vz" firstAttribute="bottom" secondItem="0hV-xH-Ibk" secondAttribute="bottom" constant="30" id="xoO-c2-ZwE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFj-sx-Ey1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ad8-Gy-pKd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2657" y="129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xy8-sF-FDa">
+            <objects>
+                <viewController id="JL2-ge-MTJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hWh-39-SkR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PXw-NL-eZr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWZ-Ju-Bqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3868" y="234"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="obA-EC-eDW">
+            <objects>
+                <viewController id="bfB-HT-78v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rra-2L-mQV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kVA-3a-cEM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcl-tE-CsE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3606" y="-413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Egy-65-y23">
