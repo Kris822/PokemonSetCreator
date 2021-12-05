@@ -456,20 +456,35 @@
             </objects>
             <point key="canvasLocation" x="3868" y="234"/>
         </scene>
-        <!--View Controller-->
+        <!--Web ViewVC-->
         <scene sceneID="obA-EC-eDW">
             <objects>
-                <viewController id="bfB-HT-78v" sceneMemberID="viewController">
+                <viewController id="bfB-HT-78v" customClass="WebViewVC" customModule="PokemonSetCreator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rra-2L-mQV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ebz-y1-8Zm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kVA-3a-cEM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="Ebz-y1-8Zm" id="AoO-hS-u7E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcl-tE-CsE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3606" y="-413"/>
+            <point key="canvasLocation" x="3605.7971014492755" y="-413.16964285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Egy-65-y23">

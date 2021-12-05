@@ -12,6 +12,7 @@
 		A40365A2275AD82A0007303A /* pokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40365A0275AD82A0007303A /* pokemonCell.swift */; };
 		A40365A3275AD82A0007303A /* pokemonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A40365A1275AD82A0007303A /* pokemonCell.xib */; };
 		A45C7F0B275D7923006406DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A45C7F0D275D7923006406DD /* Localizable.strings */; };
+		A45C7F10275D7D20006406DD /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45C7F0F275D7D20006406DD /* WebViewVC.swift */; };
 		A4C35A072759722E0055B052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C35A062759722E0055B052 /* AppDelegate.swift */; };
 		A4C35A092759722E0055B052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C35A082759722E0055B052 /* SceneDelegate.swift */; };
 		A4C35A0B2759722E0055B052 /* TeamTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C35A0A2759722E0055B052 /* TeamTableView.swift */; };
@@ -29,6 +30,7 @@
 		A40365A1275AD82A0007303A /* pokemonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pokemonCell.xib; sourceTree = "<group>"; };
 		A45C7F0C275D7923006406DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A45C7F0E275D792E006406DD /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A45C7F0F275D7D20006406DD /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		A4C35A032759722E0055B052 /* PokemonSetCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonSetCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C35A062759722E0055B052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C35A082759722E0055B052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				A4C35A0A2759722E0055B052 /* TeamTableView.swift */,
 				A4C35A1F275984710055B052 /* EditVC.swift */,
 				A403659E275ACC140007303A /* PokemonEditVC.swift */,
+				A45C7F0F275D7D20006406DD /* WebViewVC.swift */,
 				A4C35A0C2759722E0055B052 /* Main.storyboard */,
 				A4C35A122759722F0055B052 /* Assets.xcassets */,
 				A4C35A142759722F0055B052 /* LaunchScreen.storyboard */,
@@ -164,6 +167,7 @@
 			files = (
 				A4C35A20275984710055B052 /* EditVC.swift in Sources */,
 				A4C35A0B2759722E0055B052 /* TeamTableView.swift in Sources */,
+				A45C7F10275D7D20006406DD /* WebViewVC.swift in Sources */,
 				A403659D275AC6850007303A /* PokemonSprite.swift in Sources */,
 				A4C35A072759722E0055B052 /* AppDelegate.swift in Sources */,
 				A4C35A092759722E0055B052 /* SceneDelegate.swift in Sources */,
