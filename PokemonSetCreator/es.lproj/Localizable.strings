@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  PokemonSetCreator
+
+  Created by Lee, Christopher on 12/5/21.
+  
+*/
+"app_title" = "Creador de conjuntos de Pokémon";
+"editVC_title" = "¡Construye un Pokémon!";
+"pokemon_title" = "Pokémon";
+"type_text" = "Tipo principal";
+"level_text" = "Nivel";
+"ability_text" = "Capacidad";
+"item_text" = "Artículo";
+"save_text" = "Ahorrar";
+"delete_text" = "Borrar";
+"cancel_text" = "Cancelar";
+"warning_text" = "Advertencia";
+"featuresVC_text" = "¡Características adicionales geniales!";
+"video_text" = "Video especial para todas las fans de Pokemon";
+"animation_text" = "Mira una animación";
+"warning_text" = "Advertencia rápida";
+"go_back_text" = "Regresa";
+"animation_title" = "¡Mira lindas animaciones!";
+"first_button" = "¡Míralo cambiar!";
+"second_button" = "¡Míralo rebotar!";
+
+"confirmation_text" = "¿Estás segura de que quieres eliminar?";
+"alert_message" = "¿Estás seguro de que quieres ver? Puede ser demasiado lindo para manejar";

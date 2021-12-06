@@ -5,3 +5,26 @@
   Created by Lee, Christopher on 12/5/21.
   
 */
+
+"app_title" = "Pokemon Set Creator";
+"editVC_title" = "Build a Pokemon!";
+"pokemon_title" = "Pokemon";
+"type_text" = "Main Type";
+"level_text" = "Level";
+"ability_text" = "Ability";
+"item_text" = "Item";
+"save_text" = "Save";
+"delete_text" = "Delete";
+"cancel_text" = "Cancel";
+"warning_text" = "Warning";
+"featuresVC_text" = "Cool Extra Features!";
+"video_text" = "Special Video for all Pokemon Fans";
+"animation_text" = "Check out an animation!";
+"warning_text" = "Quick Warning";
+"go_back_text" = "Go Back";
+"animation_title" = "Watch Cute Animations!";
+"first_button" = "Watch him Change!";
+"second_button" = "Watch Him Bounce!";
+
+"confirmation_text" = "Are you sure you want to delete?";
+"alert_message" = "Are you sure you want to View? It may be too cute to handle";

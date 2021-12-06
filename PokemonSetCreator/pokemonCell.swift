@@ -37,8 +37,6 @@ class pokemonCell: UITableViewCell {
            let ability = pokedex.value(forKey: "ability") as? String,
            let sprite = pokedex.value(forKey: "sprite") as? Int{
             
-            backgroundColor = magmaColor
-            
             
             typeLabel?.text = type
             levelLabel?.text = level

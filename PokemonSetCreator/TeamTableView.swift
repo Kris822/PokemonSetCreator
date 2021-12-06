@@ -17,7 +17,8 @@ class TeamTableView: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.title = "PokemonSetCreator"
+        
+        self.title = NSLocalizedString("app_title", comment: "title")
         self.tableView.rowHeight = 100
             //NSLocalizedString("app_title", comment: "statistics")
         // Do any additional setup after loading the view.
@@ -26,11 +27,11 @@ class TeamTableView: UITableViewController {
     }
 
     func deletionAlert(title: String, completion: @escaping (UIAlertAction) -> Void) {
-        let alertMsg = "Are you sure you want to delete \(title)?"
-        let alert = UIAlertController(title: "Warning", message: alertMsg, preferredStyle: .actionSheet)
+        let alertMsg = NSLocalizedString("confirmation_text", comment: "confirmation")
+        let alert = UIAlertController(title: NSLocalizedString("warning_text", comment: "warning"), message: alertMsg, preferredStyle: .actionSheet)
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: completion)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        let deleteAction = UIAlertAction(title: NSLocalizedString("delete_text", comment: "delete"), style: .destructive, handler: completion)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("cancel_text", comment: "cancel"), style: .cancel)
         
         alert.addAction(deleteAction)
         alert.addAction(cancelAction)
