@@ -20,11 +20,15 @@
 "featuresVC_text" = "Cool Extra Features!";
 "video_text" = "Special Video for all Pokemon Fans";
 "animation_text" = "Check out an animation!";
+"mode_text" = "Swipe Right to change Mode";
 "warning_text" = "Quick Warning";
 "go_back_text" = "Go Back";
 "animation_title" = "Watch Cute Animations!";
 "first_button" = "Watch him Change!";
 "second_button" = "Watch Him Bounce!";
 
+"switch_text" = "Click the Switch to change mode";
+"third_text" = "A hidden surprise";
+
 "confirmation_text" = "Are you sure you want to delete?";
-"alert_message" = "Are you sure you want to View? It may be too cute to handle";
+"alert_message" = "Are you sure you want to View? \n It may be too cute to handle";

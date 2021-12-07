@@ -16,14 +16,18 @@
 "delete_text" = "Borrar";
 "cancel_text" = "Cancelar";
 "warning_text" = "Advertencia";
-"featuresVC_text" = "¡Características adicionales geniales!";
-"video_text" = "Video especial para todas las fans de Pokemon";
-"animation_text" = "Mira una animación";
+"featuresVC_text" = "¡Características adicionales \n geniales!";
+"video_text" = "Video especial para todas  \n las fans de Pokemon";
+"animation_text" = "¡Desliza hacia la izquierda \n para ver la animación!";
+"mode_text" = "Desliza hacia la derecha \n para cambiar el modo";
 "warning_text" = "Advertencia rápida";
 "go_back_text" = "Regresa";
 "animation_title" = "¡Mira lindas animaciones!";
 "first_button" = "¡Míralo cambiar!";
 "second_button" = "¡Míralo rebotar!";
 
-"confirmation_text" = "¿Estás segura de que quieres eliminar?";
-"alert_message" = "¿Estás seguro de que quieres ver? Puede ser demasiado lindo para manejar";
+"switch_text" = "Haga clic en el interruptor \n para cambiar el modo";
+"third_text" = "Una sorpresa escondida";
+
+"confirmation_text" = "¿Estás segura de que \n quieres eliminar?";
+"alert_message" = "¿Estás seguro de que quieres ver? \n Puede ser demasiado lindo para manejar";

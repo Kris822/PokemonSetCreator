@@ -41,6 +41,12 @@ class PokemonEditVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if UserDefaults.standard.bool(forKey: ModeSwitch){
+            overrideUserInterfaceStyle = .dark
+        }
+        else{
+            overrideUserInterfaceStyle = .light
+        }
         
         pokemonPicker?.dataSource = self
         pokemonPicker?.delegate = self

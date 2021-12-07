@@ -20,9 +20,24 @@ class AnimationVC: UIViewController {
     @IBOutlet weak var pokemonWidth: NSLayoutConstraint!
     @IBOutlet weak var backButton: UIButton!
 
+    @IBOutlet weak var questionMark: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if UserDefaults.standard.bool(forKey: ModeSwitch){
+            overrideUserInterfaceStyle = .dark
+        }
+        else{
+            overrideUserInterfaceStyle = .light
+        }
+        
+        if UserDefaults.standard.bool(forKey: specialTreat){
+            questionMark.isHidden = false
+        }
+        else{
+            questionMark.isHidden = true
+        }
         
         titleText.text = NSLocalizedString("animation_title", comment: "title")
         spinButton?.setTitle(NSLocalizedString("first_button", comment: "button"), for: .normal)

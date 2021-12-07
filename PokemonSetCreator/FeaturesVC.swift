@@ -17,16 +17,23 @@ class FeaturesVC: UIViewController {
     @IBOutlet weak var warningButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     
-
+    @IBOutlet weak var modeButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        if UserDefaults.standard.bool(forKey: ModeSwitch){
+            overrideUserInterfaceStyle = .dark
+        }
+        else{
+            overrideUserInterfaceStyle = .light
+        }
         
         titleText.text = NSLocalizedString("featuresVC_text", comment: "title")
         videoLink?.setTitle(NSLocalizedString("video_text", comment: "web link"), for: .normal)
         animationButton?.setTitle(NSLocalizedString("animation_text", comment: "animate"), for: .normal)
+        modeButton?.setTitle(NSLocalizedString("mode_text", comment: "animate"), for: .normal)
         warningButton?.setTitle(NSLocalizedString("warning_text", comment: "warning"), for: .normal)
         backButton?.setTitle(NSLocalizedString("go_back_text", comment: "go back"), for: .normal)
         

@@ -18,14 +18,23 @@ class TeamTableView: UITableViewController {
         
         super.viewDidLoad()
         
-        self.title = NSLocalizedString("app_title", comment: "title")
+        if UserDefaults.standard.bool(forKey: ModeSwitch){
+            overrideUserInterfaceStyle = .dark
+            self.navigationController?.navigationBar.overrideUserInterfaceStyle = .dark
+        }
+        else{
+            overrideUserInterfaceStyle = .light
+            self.navigationController?.navigationBar.overrideUserInterfaceStyle = .light
+        }
+        
+        self.title = NSLocalizedString("pokemon_title", comment: "title")
         self.tableView.rowHeight = 100
             //NSLocalizedString("app_title", comment: "statistics")
         // Do any additional setup after loading the view.
         self.registerTableViewCells()
         readData()
     }
-
+    
     func deletionAlert(title: String, completion: @escaping (UIAlertAction) -> Void) {
         let alertMsg = NSLocalizedString("confirmation_text", comment: "confirmation")
         let alert = UIAlertController(title: NSLocalizedString("warning_text", comment: "warning"), message: alertMsg, preferredStyle: .actionSheet)
@@ -60,6 +69,13 @@ class TeamTableView: UITableViewController {
         
         if let pokedex = media[indexPath.row] as? Pokedex {
             cell.update(with: pokedex)
+        }
+        
+        if UserDefaults.standard.bool(forKey: ModeSwitch){
+            cell.overrideUserInterfaceStyle = .dark
+        }
+        else{
+            cell.overrideUserInterfaceStyle = .light
         }
         
         //cell.imageCell.image = UIImage(named: "w")
@@ -106,6 +122,14 @@ class TeamTableView: UITableViewController {
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
         readData()
+        if UserDefaults.standard.bool(forKey: ModeSwitch){
+            overrideUserInterfaceStyle = .dark
+            self.navigationController?.navigationBar.overrideUserInterfaceStyle = .dark
+        }
+        else{
+            overrideUserInterfaceStyle = .light
+            self.navigationController?.navigationBar.overrideUserInterfaceStyle = .light
+        }
         tableView.reloadData()
     }
 
