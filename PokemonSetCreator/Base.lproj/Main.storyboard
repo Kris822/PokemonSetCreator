@@ -260,7 +260,7 @@
                                             <color key="titleColor" name="Tertiary"/>
                                         </state>
                                         <connections>
-                                            <segue destination="bfB-HT-78v" kind="presentation" id="XMv-xr-zAL"/>
+                                            <segue destination="bfB-HT-78v" kind="show" id="m4v-iK-7io"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mey-7C-sYe">
@@ -530,6 +530,7 @@
                         <viewLayoutGuide key="safeArea" id="kVA-3a-cEM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4sJ-sf-eYO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="Ebz-y1-8Zm" id="AoO-hS-u7E"/>
